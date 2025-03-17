@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 10px;
+}
+h1{
+    margin-inline: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 3s steps(22) forwards , blink 1s step-end infinite;
+    
+}
+@keyframes typing{
+    from {
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes blink{
+    50% {
+        border-color: transparent;
+    }
+}
+
+.name{
+    width: 165px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+form{
+    width: 300px;
+}
+input , button{
+    padding: 10px;
+    cursor: pointer;
+    width: -webkit-fill-available;
+    margin: 5px;
+}
+.clear {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 15px;
+}
+.button-entry-white{
+    border: none;
+    padding: 10px 20px 10px 20px ;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.button-registrer{
+    background-color: transparent;
+    border-radius: 10px;
+}
