@@ -14,19 +14,19 @@
             <label>Email</label>
         </div>
         <div>
-            <input type="email" name="email" placeholder="Seu e-mail" >
+            <input type="email" name="email" placeholder="Seu e-mail"   onchange = "ValidateFields()" id="email">
         </div>
         <div class="name">
             <label>Senha</label>
         </div>
         <div>
-            <input type="password" name="senha" placeholder="Sua senha">
+            <input type="password" name="senha" placeholder="Sua senha" id="password">
         </div>
         <div>
-            <button class="clear" type="button">Recuperar senha</button>
+            <button class="clear" type="button" disabled = "true" id="recovery-password">Recuperar senha</button>
         </div>
         <div>
-            <button type="button" class="button-entry-white">Entrar</button>
+            <button type="button" class="button-entry-white" disabled = "true" id="login-button">Entrar</button>
         </div>
         <div>
             <button type="button" class="button-registrer">Registrar</button>
@@ -34,4 +34,5 @@
         </div>
     </form>
 </body>
+<script>src = "index.js";</script>
 </html>
